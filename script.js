@@ -6,6 +6,7 @@ console.log(perimeter(sidesLength, sidesCount));
 let digitsToPrint = prompt("Max digit to print is ", "");
 printDigits(digitsToPrint);
 console.log(calculate(15,45,60));
+console.log(isDivisible(20, 2 ,5));
 magicArrayFunction(10);
 magic2DArrayFunction();
 let number1 = prompt("Enter 1st number for operation","");
@@ -61,6 +62,19 @@ function calculate (num1, num2, num3) {
     return (num1 + num2 + num3) / 3;
 }
 
+// Task 5
+function isDivisible(n,x,y){
+    if(n !== 0 && n > 0 && x !==0 && x > 0 && y !==0 && y > 0){
+        if(n % x === 0 && n % y === 0){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+    //return (n !== 0 && n > 0 && x !==0 && x > 0 && y !==0 && y > 0 && n % x === 0 && n % y === 0) ? true : false;
+    //return n !== 0 && n > 0 && x !==0 && x > 0 && y !==0 && y > 0 && n % x === 0 && n % y === 0;
+}
 
 // Task 6
 function magicArrayFunction(elementsCount) {
